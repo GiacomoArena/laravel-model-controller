@@ -10,9 +10,8 @@
                     <div class="card m-2" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">{{$movie->title}}</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-success">Go somewhere</a>
+                            <p class="card-text">{{$movie->original_title}}</p>
+                            <a href="{{ route('movie_detail', ['id' => $movie-> id] ) }}" class="btn btn-success">Go to movie info</a>
                         </div>
                     </div>
                 @endforeach
